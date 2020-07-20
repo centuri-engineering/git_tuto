@@ -6,6 +6,8 @@ logo: images/logo.png
 fontsize: 10pt
 width: 1080
 height: 800
+theme: solarized
+data-transition: none
 ...
 
 
@@ -26,15 +28,15 @@ height: 800
 
 -------
 
-## Github and Gitlab, multi-user collaborations
+## Github and Gitlab, multi-user collaboration
 
-0. one user, several forks: `pull`, `push`
-
-1. project architecture (and a word on licenses)
+1. one user, several forks: `pull`, `push`
 
 2. pull requests
 
-3. introduction to Continuous Integration
+3. Issues and bug reports
+
+4. introduction to Continuous Integration
 
 
 # git as a single user
@@ -50,13 +52,31 @@ Other usefull commands:
 - `status`: how is my project (new files, untracked changes, deleted files, ...)
 - `log`: what happened before now
 
+
 -------
 
-## configuration
+## structure & configuration
 
-- good to have a direct read of the state of your code (in your editor or term)
-- add user and email
+:::::::::::::: {.columns}
+::: {.column width="30%"}
+![](images/directory.png)
+:::
+::: {.column width="70%"}
+
 - `.gitignore` to avoid tracking certain files (build, automated backups, etc.)
+
+- good to have a direct read of the state of your code (in your editor or terminal)
+
+- add user and email
+
+```
+git config --global user.name "Guillaume Gay"
+git config --global user.email "guillaume.gay.1@univ-amu.fr"
+```
+
+:::
+::::::::::::::
+
 
 ## branches and how to merge them
 
@@ -66,7 +86,7 @@ Other usefull commands:
 
 ## how to cancel and revert mistakes
 
-![Oh no!](images/ohno_alecnoris.jpg)
+![](images/ohno_alecnoris.jpg)
 
 - `restore` : go back to a previous version of the file, undelete, etc.
 - how to refer to previous versions?
@@ -82,7 +102,7 @@ Other usefull commands:
 
 ## One user, several repositories
 
-![Two repo](images/workflow1.png)
+![Two repos](images/workflow1.png)
 
 -------
 
@@ -108,3 +128,34 @@ Other usefull commands:
 ## Two users, several repositories
 
 ![Merge requests](images/workflow5.png)
+
+# Issues
+
+* Do not hesitate to report problems
+
+* Be polite etc.
+
+* Use issues to discuss and track _your_ problems
+
+* What's [a minimal reproducible example](https://github.com/numpy/numpy/issues/16909)?
+
+
+# A word on Continuous Integration
+
+
+* Automates tests
+
+* No more 'but it works on my machine :/'
+
+* Can be tricky to setup
+
+---------------
+
+###  Questions, comments, suggestions:
+ [github.com/centuri-engineering/git_tuto](https://github.com/centuri-engineering/git_tuto)
+
+<p style="margin-bottom: 100px"></p>
+
+### Slack Channel:
+
+ [centuri-livingsystems.org/multi-engineering-platform](https://centuri-livingsystems.org/multi-engineering-platform)
