@@ -2,7 +2,7 @@
 html:
 	rm -Rf build_html
 	mkdir build_html
-	ln -s ../../reveal.js build_html
+	ln -s ~/Presentations/reveal.js build_html
 	cp -R images build_html
 	pandoc -t revealjs -s main.md -o build_html/main.html --slide-level 2 --mathjax
 
