@@ -11,12 +11,6 @@ data-transition: none
 center: 0
 ...
 
-
-## Obligatory XKCD
-
-![git commic strip by Randal Munroe](https://imgs.xkcd.com/comics/git.png "just a few commands")
-
-
 # Outline
 
 ## Git as a single user
@@ -27,13 +21,13 @@ center: 0
 
 3. How to revert mistakes
 
-4. Branches and forks
+4. Backing up to [github](https://github.com)
 
 -------
 
 ## Github and Gitlab, multi-user collaboration
 
-0. Backing up to [github](https://github.com)
+0. Branches and forks
 
 1. pull requests
 
@@ -46,15 +40,19 @@ center: 0
 
 ## Getting started
 
+
+------
+
 ### 1. Install git
 
 
-- Linux: `sudo yum install git` or `sudo apt install git`
+- Linux: `sudo apt install git`
 
-- Mac OS X: `brew install git` or visit [git-scm.com/download/mac](https://git-scm.com/download/mac)
+- Mac OS X: [git-scm.com/download/mac](https://git-scm.com/download/mac)
 
-- Windows: visit [git-scm.com/download/win](https://git-scm.com/download/win) and install the `.exe`
+or `brew install git`
 
+- Windows:  [git-scm.com/download/win](https://git-scm.com/download/win)
 
 -------
 
@@ -85,37 +83,15 @@ git config --global user.email "guillaume.gay.1@univ-amu.fr"
 - Create a directory (called e.g. `Documents/GitTuto`)
 - in the terminal `cd` to that directory:
 
-:::::::::::::: {.columns}
-::: {.column}
-#### Bash
-
 ```sh
 cd Documents/GitTuto
 ```
-:::
-::: {.column}
-#### DOS
-
-```sh
-cd C:\User\Guillaume\Documents\GitTuto
-```
-:::
-::::::::::::::
 
 - The directory is empty:
 
-:::::::::::::: {.columns}
-::: {.column}
 ```sh
 ls -la
 ```
-:::
-::: {.column}
-```sh
-dir
-```
-:::
-::::::::::::::
 
 --------
 
@@ -129,24 +105,14 @@ git init
 
 - Now the directory isn't empty
 
-::::::::::: {.columns}
-::: {.column}
 ```sh
 ls -la
 tree .git/
 ```
-:::
-::: {.column}
-```sh
-dir
-```
-:::
-:::::::::::
 
 . . .
 
 _You can do this on an existing directory_
-
 
 
 -------
@@ -155,11 +121,12 @@ _You can do this on an existing directory_
 
 ::: incremental
 
-* It is safe to copy or move the whole directory
-
 * **!!** `.git` might contain lots of small files
 
 * **!!** Delete `.git` → lose history
+
+* You can move the whole directory (with the `.git` subdir.)
+
 
 :::
 
@@ -211,7 +178,7 @@ _Now git knows about your file_
 
 -----
 
-#### **`git commit`**
+#### `git commit`
 
 . . .
 
@@ -231,7 +198,7 @@ _Git registered your file_
 
 -----
 
-Edit README.md (add a some text) and
+Edit README.md (add some text) and
 
 ```sh
 git status
@@ -241,12 +208,18 @@ You can see there are untracked changes
 
 . . .
 
+**`git diff`** shows what changed.
+
+
+```sh
+git diff
+```
+
+. . .
+
 
 ```sh
 git commit -am "My second commit"
-```
-
-```sh
 git status
 ```
 
@@ -270,22 +243,21 @@ git log
 
 Edit README.md again and do
 
-```sh
-git diff
-```
-
-
 -----
 
 * The `.gitignore` file allows to avoid tracking certain files (build, automated backups, etc.)
-
 . . .
 
+
 * Create a file called `tmp_file.txt`
+
 
 ```sh
 git status
 ```
+. . .
+
+
 
 * Create a file called `.gitignore` and write `tmp_*` in it
 
@@ -348,37 +320,8 @@ You can find a commit's hash with `git log`
 
 ----------
 
-You can also move the whole directory to a previous version with
-
-```sh
-git reset --hard ae2fd12
-```
-
-> **!!** Can erase history **!!**
-
-or undo a commit with
-
-```sh
-git revert 1ecf342
-```
-
-_I don't do that much_
-
-. . .
-
 > There are plenty of more powerfull things you can do, but I don't know / need them!
 
-
-## Branches and how to merge them (2nd session)
-
-![branches](images/tree.png)
-
-. . .
-
-> branches are cheap, use them!
-
-
-# Github and Gitlab
 
 ## Backing up to [github](https://github.com)
 
@@ -396,10 +339,9 @@ On github, go to settings > SSH and GPG Keys > New SSH key
 
 Copy the content of `.ssh/id_rsa.pub` there.
 
-
 ---------
 
-### Local to distant
+### Local first
 
 - Create a new (empty) "GitTuto" repository on github
 
@@ -410,16 +352,39 @@ Copy the content of `.ssh/id_rsa.pub` there.
 ```sh
 git remote add origin git@github.com/glyg/GitTuto.git
 ```
+- Change your principal branch from `master`to `main`
+
+```sh
+git branch -M main
+```
 
 - Publish your repo to github
 
 ```sh
-git push origin main
+git push -u origin main
+```
+
+----------
+
+- Make a change on README.md on github
+
+```
+git status
+git remote show origin
+git pull
+git status
 ```
 
 -------
 
-### Distant to local
+Make new changes, commit and push
+
+```sh
+git commit -am "changed README.md"
+git push
+```
+
+### Distant first
 
 - Delete your local directory
 
@@ -444,16 +409,22 @@ git remote show origin
 git push
 ```
 
-----------
+## Summary
 
-- Make a change on README.md on github
+![](images/single_user_wf.svg)
 
-```
-git status
-git remote show origin
-git pull
-git status
-```
+
+
+## Branches and how to merge them (2nd session)
+
+![branches](images/tree.png)
+
+. . .
+
+> branches are cheap, use them!
+
+
+# Collaboration with Github and Gitlab
 
 
 ## One user, several repositories
