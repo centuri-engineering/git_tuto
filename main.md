@@ -352,7 +352,7 @@ Copy the content of `.ssh/id_rsa.pub` there.
 ```sh
 git remote add origin git@github.com/glyg/GitTuto.git
 ```
-- Change your principal branch from `master`to `main`
+- Change your principal branch from `master` to `main`
 
 ```sh
 git branch -M main
