@@ -53,9 +53,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="333.35525"
-     inkscape:cy="75.980884"
+     inkscape:zoom="1.4"
+     inkscape:cx="265.9062"
+     inkscape:cy="74.464899"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -82,7 +82,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -182,19 +182,19 @@
        width="20.794554"
        height="5.1023588"
        x="-58.179169"
-       y="106.49578"
+       y="98.558289"
        transform="rotate(-90)" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';letter-spacing:0px;word-spacing:0px;fill:#2e3436;stroke-width:0.264583"
        x="-56.59166"
-       y="110.43442"
+       y="102.49692"
        id="text2280"
        transform="rotate(-90)"><tspan
          sodipodi:role="line"
          id="tspan2278"
          x="-56.59166"
-         y="110.43442"
+         y="102.49692"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';fill:#2e3436;stroke-width:0.264583">push</tspan></text>
     <rect
        style="opacity:1;vector-effect:none;fill:#8e2f2f;fill-opacity:0.536069;fill-rule:evenodd;stroke:none;stroke-width:0.248208px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -222,19 +222,19 @@
        width="20.794554"
        height="5.1023588"
        x="-58.179169"
-       y="113.24268"
+       y="107.95102"
        transform="rotate(-90)" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';letter-spacing:0px;word-spacing:0px;fill:#2e3436;stroke-width:0.264583"
        x="-56.59166"
-       y="117.12381"
+       y="111.83215"
        id="text2288"
        transform="rotate(-90)"><tspan
          sodipodi:role="line"
          id="tspan2286"
          x="-56.59166"
-         y="117.12381"
+         y="111.83215"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';fill:#2e3436;stroke-width:0.264583">commit</tspan></text>
     <rect
        style="opacity:1;vector-effect:none;fill:#729fcf;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.248208px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -242,19 +242,19 @@
        width="20.794554"
        height="5.1023588"
        x="-58.179169"
-       y="137.51816"
+       y="132.22649"
        transform="rotate(-90)" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';letter-spacing:0px;word-spacing:0px;fill:#2e3436;stroke-width:0.264583"
        x="-56.59166"
-       y="141.37057"
+       y="136.0789"
        id="text2292"
        transform="rotate(-90)"><tspan
          sodipodi:role="line"
          id="tspan2290"
          x="-56.59166"
-         y="141.37057"
+         y="136.0789"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';fill:#2e3436;stroke-width:0.264583">push</tspan></text>
     <rect
        style="opacity:1;vector-effect:none;fill:#8ae234;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.248208px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -385,33 +385,33 @@
     <path
        id="rect2838"
        style="opacity:1;vector-effect:none;fill:#f57900;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.248208px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       d="M 99.021346,58.179169 V 37.384615 h 5.102374 v 20.794554 z" />
+       d="M 142.41304,58.179169 V 37.384615 h 5.10238 v 20.794554 z" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';letter-spacing:0px;word-spacing:0px;fill:#2e3436;stroke-width:0.264583"
        x="-56.59166"
-       y="102.93124"
+       y="146.32289"
        id="text2842"
        transform="rotate(-90)"><tspan
          sodipodi:role="line"
          id="tspan2840"
          x="-56.59166"
-         y="102.93124"
+         y="146.32289"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';fill:#2e3436;stroke-width:0.264583">pull</tspan></text>
     <path
        style="fill:none;stroke:#2e3436;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 96.390879,27.053717 10e-7,14.626768 2.499728,-3e-6"
+       d="m 139.78258,27.053717 v 14.626768 l 2.49972,-3e-6"
        id="path2844"
        sodipodi:nodetypes="ccc" />
     <text
        xml:space="preserve"
        style="font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#555753;stroke-width:0.264583"
-       x="81.997253"
+       x="125.38889"
        y="26.777426"
        id="text2848"><tspan
          sodipodi:role="line"
          id="tspan2846"
-         x="81.997253"
+         x="125.38889"
          y="26.777426"
          style="font-style:italic;font-size:3.52778px;fill:#555753;stroke-width:0.264583">remote change</tspan></text>
     <rect
@@ -608,7 +608,7 @@
        width="20.794554"
        height="5.1023588"
        x="-58.179169"
-       y="123.826"
+       y="118.53433"
        transform="rotate(-90)" />
     <text
        xml:space="preserve"
@@ -616,7 +616,7 @@
        x="-56.062492"
        y="125.06131"
        id="text3639"
-       transform="rotate(-90,1.5874999,-1.0583333)"><tspan
+       transform="rotate(-90,-1.0583334,1.5875)"><tspan
          sodipodi:role="line"
          id="tspan3637"
          x="-56.062492"
@@ -628,34 +628,50 @@
        width="20.794554"
        height="5.1023588"
        x="-58.179169"
-       y="130.70522"
+       y="125.41355"
        transform="rotate(-90)" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';letter-spacing:0px;word-spacing:0px;fill:#2e3436;stroke-width:0.264583"
        x="-56.59166"
-       y="134.5863"
+       y="129.29463"
        id="text3672"
        transform="rotate(-90)"><tspan
          sodipodi:role="line"
          id="tspan3670"
          x="-56.59166"
-         y="134.5863"
+         y="129.29463"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DejaVu Sans Mono';-inkscape-font-specification:'DejaVu Sans Mono';fill:#2e3436;stroke-width:0.264583">commit</tspan></text>
     <path
        style="fill:none;stroke:#2e3436;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 121.26174,34.462049 v 7.218434 l 2.49973,-3e-6"
+       d="m 115.97007,34.462049 v 7.218434 l 2.49973,-3e-6"
        id="path3726" />
     <text
        xml:space="preserve"
        style="font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#555753;stroke-width:0.264583"
-       x="110.53175"
+       x="105.24009"
        y="33.567535"
        id="text3730"><tspan
          sodipodi:role="line"
          id="tspan3728"
-         x="110.53175"
+         x="105.24009"
          y="33.567535"
          style="font-style:italic;font-size:3.52778px;fill:#555753;stroke-width:0.264583">unwanted change</tspan></text>
+    <path
+       style="fill:none;stroke:#2e3436;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 95.861716,27.582885 2e-6,14.097598 2.499725,7e-6"
+       id="path949"
+       sodipodi:nodetypes="ccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.52778px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#555753;stroke-width:0.264583"
+       x="83.742722"
+       y="26.935383"
+       id="text953"><tspan
+         sodipodi:role="line"
+         id="tspan951"
+         x="83.742722"
+         y="26.935383"
+         style="font-style:italic;font-size:3.52778px;fill:#555753;stroke-width:0.264583">publish to remote</tspan></text>
   </g>
 </svg>

@@ -132,6 +132,9 @@ _You can do this on an existing directory_
 
 -------
 
+#### **`status`**
+
+
 To know what is going on at any time, type:
 
 ```sh
@@ -144,7 +147,7 @@ git status
 -----
 
 
-#### **`git add`**
+#### **`add`**
 
 
 . . .
@@ -178,7 +181,7 @@ _Now git knows about your file_
 
 -----
 
-#### `git commit`
+#### **`commit`**
 
 . . .
 
@@ -197,6 +200,9 @@ git status
 _Git registered your file_
 
 -----
+#### **`diff`**
+
+
 
 Edit README.md (add some text) and
 
@@ -227,7 +233,7 @@ Your changes were registered _(wash, rince, repeat)_
 
 ----
 
-#### Other usefull stuff:
+#### **`log`**
 
 
 
@@ -237,33 +243,20 @@ Your changes were registered _(wash, rince, repeat)_
 git log
 ```
 
-. . .
-
-- `diff`: show what changed
-
-Edit README.md again and do
-
 -----
-
-* The `.gitignore` file allows to avoid tracking certain files (build, automated backups, etc.)
-. . .
-
 
 * Create a file called `tmp_file.txt`
 
-
 ```sh
 git status
 ```
+
 . . .
 
 
+* The `.gitignore` file allows to avoid tracking certain files (build, automated backups, etc.): create a file called `.gitignore` and write `tmp_*` in it.
 
-* Create a file called `.gitignore` and write `tmp_*` in it
-
-```sh
-git status
-```
+> Only .gitignore is listed as untracked
 
 
 _It's good to have a direct read of the state of your code (in your editor or terminal)_
@@ -301,13 +294,8 @@ Those undo changes made since latest commit
 
 -----------
 
-> You can restore older versions of the file and do much more
+You can restore older versions of the file.
 
-See
-
-```sh
-git restore --help
-```
 
 For exemple to restore a file at a certain commit, you can reference this commit by its _hash_:
 
@@ -316,7 +304,6 @@ git restore -s ae2fd12 README.md
 ```
 
 You can find a commit's hash with `git log`
-
 
 ----------
 
@@ -343,6 +330,9 @@ Copy the content of `.ssh/id_rsa.pub` there.
 
 ### Local first
 
+#### **`remote add`**
+
+
 - Create a new (empty) "GitTuto" repository on github
 
 - Copy the repo URL
@@ -352,30 +342,25 @@ Copy the content of `.ssh/id_rsa.pub` there.
 ```sh
 git remote add origin git@github.com/glyg/GitTuto.git
 ```
+
+. . .
+
 - Change your principal branch from `master` to `main`
 
 ```sh
 git branch -M main
 ```
 
-- Publish your repo to github
+----------
+
+#### **`push`**
+
+- Publish the local files to github
 
 ```sh
 git push -u origin main
 ```
-
-----------
-
-- Make a change on README.md on github
-
-```
-git status
-git remote show origin
-git pull
-git status
-```
-
--------
+. . .
 
 Make new changes, commit and push
 
@@ -384,29 +369,36 @@ git commit -am "changed README.md"
 git push
 ```
 
+-----
+
+#### **`pull`**
+
+
+- Make a change on README.md on github & commit there
+
+```
+git pull
+git log
+```
+
+-------
+
+
 ### Distant first
 
-- Delete your local directory
+#### **`clone`**
 
-. . .
 
-- In the parent directory:
+- In another place on your computer (or on another computer):
 
 ```sh
 git clone git@github.com/glyg/GitTuto.git
+cd GitTuto
 ```
 
 ```sh
 git status
 git remote show origin
-```
-
-. . .
-
-- Make a change and commit it, then
-
-```sh
-git push
 ```
 
 ## Summary
