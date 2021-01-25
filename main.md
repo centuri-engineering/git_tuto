@@ -200,6 +200,8 @@ git status
 _Git registered your file_
 
 -----
+
+
 #### **`diff`**
 
 
@@ -245,6 +247,8 @@ git log
 
 -----
 
+#### **`.gitignore`**
+
 * Create a file called `tmp_file.txt`
 
 ```sh
@@ -254,12 +258,11 @@ git status
 . . .
 
 
-* The `.gitignore` file allows to avoid tracking certain files (build, automated backups, etc.): create a file called `.gitignore` and write `tmp_*` in it.
-
-> Only .gitignore is listed as untracked
+* Create a file called `.gitignore` and write `tmp_*` in it.
 
 
-_It's good to have a direct read of the state of your code (in your editor or terminal)_
+Only .gitignore is listed as untracked
+
 
 
 -------
@@ -306,6 +309,11 @@ git restore -s ae2fd12 README.md
 You can find a commit's hash with `git log`
 
 ----------
+
+#### In closing
+
+> It's good to have a direct read of the state of your code (in your editor or terminal)
+
 
 > There are plenty of more powerfull things you can do, but I don't know / need them!
 
