@@ -80,11 +80,11 @@ git config --global user.email "guillaume.gay.1@univ-amu.fr"
 
 ### 4. Create your first project
 
-- Create a directory (called e.g. `Documents/GitTuto`)
+- Create a directory (called e.g. `GitTuto`)
 - in the terminal `cd` to that directory:
 
 ```sh
-cd Documents/GitTuto
+cd GitTuto
 ```
 
 - The directory is empty:
@@ -95,6 +95,7 @@ ls -la
 
 --------
 
+
 - Tell git to start tracking this dir
 
 ```sh
@@ -103,16 +104,10 @@ git init
 
 . . .
 
-- Now the directory isn't empty
+<video width="800" height="600" controls>
+  <source src="images/git_tuto_00.avi" type="video/mp4">
+</video>
 
-```sh
-ls -la
-tree .git/
-```
-
-. . .
-
-_You can do this on an existing directory_
 
 
 -------
@@ -127,6 +122,7 @@ _You can do this on an existing directory_
 
 * You can move the whole directory (with the `.git` subdir.)
 
+* You can do `git init` on an existing directory (only once)
 
 :::
 
@@ -142,6 +138,8 @@ git status
 ```
 
 
+
+
 ## git as an archive manager
 
 -----
@@ -155,11 +153,15 @@ git status
 - Create a (text) file, e.g. `README.md`
 - Write "This is a git tutorial" in it.
 
-. . .
+<video width="800" height="600" controls>
+  <source src="images/git_tuto_01.avi" type="video/mp4">
+</video>
 
-```sh
-git status
-```
+
+------
+
+Add the file to your git "ledger"
+
 
 . . .
 
@@ -167,14 +169,11 @@ git status
 git add README.md
 ```
 
-. . .
-
-```sh
-git status
-```
+<video width="800" height="600" controls>
+  <source src="images/git_tuto_02.avi" type="video/mp4">
+</video>
 
 . . .
-
 
 _Now git knows about your file_
 
@@ -191,11 +190,11 @@ git commit -am "My first commit"
 ```
 _The message is mendatory_
 
-```sh
-git status
-```
-
 . . .
+
+<video width="800" height="600" controls>
+  <source src="images/git_tuto_03.avi" type="video/mp4">
+</video>
 
 _Git registered your file_
 
@@ -204,32 +203,13 @@ _Git registered your file_
 
 #### **`diff`**
 
+Modify README.md, `git status` shows there are untracked changes and  `git diff` shows what changed.
 
-
-Edit README.md (add some text) and
-
-```sh
-git status
-```
-
-You can see there are untracked changes
+<video width="800" height="600" controls>
+  <source src="images/git_tuto_04.avi" type="video/mp4">
+</video>
 
 . . .
-
-**`git diff`** shows what changed.
-
-
-```sh
-git diff
-```
-
-. . .
-
-
-```sh
-git commit -am "My second commit"
-git status
-```
 
 Your changes were registered _(wash, rince, repeat)_
 
@@ -238,12 +218,16 @@ Your changes were registered _(wash, rince, repeat)_
 #### **`log`**
 
 
+`git log` tells you what happened before now
 
-- `log`: what happened before now
+<video width="800" height="600" controls>
+  <source src="images/git_tuto_05.avi" type="video/mp4">
+</video>
 
-```sh
-git log
-```
+. . .
+
+Each commit is identified by its hash (e.g. `81cd7`)
+
 
 -----
 
